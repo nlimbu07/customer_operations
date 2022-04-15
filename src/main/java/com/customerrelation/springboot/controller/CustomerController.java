@@ -69,6 +69,11 @@ public class CustomerController {
 		}
 	}
 
+	@GetMapping("/test/mine")
+	public String getMessage(){
+		return " added into repository";
+	}
+
 	@DeleteMapping("/deleteCustomer/{custId}")
 	public String deleteCustomer(@PathVariable("custId") int custId) {
 
